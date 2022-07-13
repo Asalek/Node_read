@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+<h1>HOME</h1>
+
+<p><%= home%></p>
+
+<% posts.forEach(function(el){%>
+	<h3><%=el.input%></h3>		
+	<% if(el.multiInput.length > 100){%>
+		<p><%= el.multiInput.substring(0,100) + " ..."; %><a href="/post/<%=el.input%>">Read More</a></p>
+	<%}
+	else{ %>
+		<p><%= el.multiInput; %></p>
+	<% } %>
+<% });%>
+
+<%- include("partials/footer"); -%>
