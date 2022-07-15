@@ -7,8 +7,8 @@ this simple web site build with Javascript Frameworks such as NodeJs (Express, E
 be sure that nodeJs already installed on your machine then copy paste bellow commands :
 
 ```
-git clone 
-cd boss_level
+git clone https://github.com/Asalek/Node_read.git
+cd Node_read
 npm i
 nodemon script.js || node script.js
 ```
